@@ -36,3 +36,13 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/.idea/.gitignore
+/.idea/encodings.xml
+/.idea/misc.xml
+/src/main/java/DayOne/onlyFirstAndLastNumber.txt
+/src/main/java/DayOne/onlyFirstAndLastNumberPartTwo.txt
+/src/main/java/DayOne/onlyNumbers.txt
+/src/main/java/DayOne/onlyNumbersPartTwo.txt
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
+/src/main/java/DayOne/wordsIntoNumbers.txt
