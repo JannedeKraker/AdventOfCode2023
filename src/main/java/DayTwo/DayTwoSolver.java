@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class DayTwoSolver {
-
+// er gaat iets mis in de DayTwoSolver.
     DayTwoSolver(Path filePath) throws IOException {
         List<String> lines = Files.readAllLines(filePath, StandardCharsets.UTF_8);
         int sumPossibleGameLines = 0;
