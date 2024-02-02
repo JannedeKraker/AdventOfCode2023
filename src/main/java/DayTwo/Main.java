@@ -10,7 +10,9 @@ public class Main {
     public static void main(String[] args) {
         Path pathPuzzleInputDayTwo = Paths.get("src/main/java/DayTwo/puzzleInputDayTwo.txt");
         try {
-            new DayTwoSolver(pathPuzzleInputDayTwo);
+            DayTwoSolver dayTwo = new DayTwoSolver();
+            dayTwo.dayTwoPartOneSolver(pathPuzzleInputDayTwo);
+            dayTwo.dayTwoPartTwoSolver(pathPuzzleInputDayTwo);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
