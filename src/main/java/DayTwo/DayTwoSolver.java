@@ -8,19 +8,19 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class DayTwoSolver {
-// er gaat iets mis in de DayTwoSolver.
+
     DayTwoSolver(Path filePath) throws IOException {
         List<String> lines = Files.readAllLines(filePath, StandardCharsets.UTF_8);
         int sumPossibleGameLines = 0;
         for (String line : lines) {
-            String gameLineWithouthGameName = getGameLineWithoutGameName(line);
-            String[] hands = getHands(gameLineWithouthGameName);
+            String gameLineWithoutGameName = getGameLineWithoutGameName(line);
+            String[] hands = getHands(gameLineWithoutGameName);
             int highestRed = getHighestNumberFromColor(hands, "red");
             int highestGreen = getHighestNumberFromColor(hands, "green");
             int highestBlue = getHighestNumberFromColor(hands, "blue");
            if (IsGamePossible(highestRed,highestGreen,highestBlue)) {
                int gameNumber = getNumberFromString(getGameName(line));
-               sumPossibleGameLines =+ gameNumber;
+               sumPossibleGameLines += gameNumber;
            }
 
     }
